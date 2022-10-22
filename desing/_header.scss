@@ -1,0 +1,51 @@
+.header {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    background-color: transparent;
+    margin-top: 40px;
+   
+    .container {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        
+        .nav {
+            display: grid;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(8,1fr);
+                padding: 0px;
+                margin: 0px;
+                list-style-type: none;
+                justify-content: center;
+
+                li {
+                    display: grid;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    a {
+                        font-family:"Garamond";
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 23px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        z-index: 40;
+                        color: white;
+                        border-bottom: 1px solid transparent;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #CDAA7D;
+                            border-bottom: 1px solid #CDAA7D;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

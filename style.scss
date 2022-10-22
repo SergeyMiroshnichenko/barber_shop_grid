@@ -1,0 +1,19 @@
+@import"./desing/_main.scss";
+@import"./desing/_header.scss";
+@import"./desing/_footer.scss";
+
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/CormorantGaramond-Regular.ttf);
+    font-weight: 400;
+};
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/CormorantGaramond-SemiBold.ttf);
+    font-weight: 600;
+};
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/CormorantGaramond-Bold.ttf);
+    font-weight: 700;
+}

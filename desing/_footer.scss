@@ -15,12 +15,34 @@
         align-items:start;
 
         .contact {
-            width: 40%;
+            width: 50%;
+
+            address {
+                cursor: pointer;
+                color: white;
+                font-family:"Garamond";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0em;
+                text-align: left;
+                list-style-type: none;
+                text-decoration: none;
+            }
         }
 
         .logo {
             display: grid;
             justify-content: center;
+            
+            a {
+                cursor: pointer;
+
+                &:hover {
+                    color: #CDAA7D;
+                    border-bottom: 1px solid #CDAA7D;
+                }
+            }
         }
         
         a {
@@ -43,17 +65,7 @@
             }
         }
 
-        .mon_fr {
-            color: white;
-            font-family:"Garamond";
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 23px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-
-        .sat_sun {
+        .work_day {
             color: white;
             font-family:"Garamond";
             font-size: 18px;

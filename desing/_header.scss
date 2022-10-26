@@ -4,14 +4,18 @@
     grid-template-columns: 100%;
     background-color: transparent;
     margin-top: 40px;
+    position: fixed;
+    z-index: 999;
    
     .container {
         display: grid;
         grid-template-columns: 80%;
         justify-content: center;
+       
         
         .nav {
             display: grid;
+            border: 1px solid #FFFFFF;
 
             ul {
                 display: grid;
@@ -44,6 +48,12 @@
                             border-bottom: 1px solid #CDAA7D;
                         }
                     }
+
+                        .active { 
+                            color: #CDAA7D;
+                            border-bottom: 1px solid #CDAA7D;
+                        }
+                    
                 }
             }
         }

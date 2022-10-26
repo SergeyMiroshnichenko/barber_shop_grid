@@ -1,4 +1,5 @@
 body {
+    position: relative;
     margin: 0px;
     padding: 0px;
 }
@@ -12,7 +13,7 @@ main {
         grid-template-columns: 100%;
         justify-content: center;
         background:url(/img/bgc.png) no-repeat 100%;
-        height: 900px;
+        height: 100vh;
         align-items: center;
         z-index: 3;
         margin-top: -95px;
@@ -53,8 +54,12 @@ main {
        justify-items: center;
        padding: 40px 0px;
 
-       img {
-         margin-bottom: 20px;
+       .cat {
+         font-size: 200px;
+         color: white;
+         align-items: flex-end;
+         display: flex;
+        
         }
 
         p {
@@ -84,25 +89,51 @@ main {
         grid-template-columns:1fr 1fr 1fr;
         justify-content: center;
         width: 80%;
-        gap:15px;
+        gap:55px;
         text-align: center;
 
         .wrapper_service {
              transition: 0.3s;
+             position: relative;
 
-            .box_service {
+            .box_service {  
+              display: grid ;
+              grid-template-columns: 1fr 1fr 1fr;
+              height: 45vh;
+              position: relative;         
+              border: 1px solid #CDAA7D;
+              margin-bottom: 60px;
+              transition: 0.3s;
 
                 img {
-                    width: 90%;
+                    display: grid;
+                    width: 100%;
+                    height: 45vh;
+                    position:absolute;
+                    top:20px;
+                    right: 20px;
                 }
+                &:hover {
+                    box-shadow: 0px 0px 5px 5px #CDAA7D;
+                 }
 
-                .name_servece {
-                    color: white;
-                }
             }
 
-           &:hover {
-              box-shadow: 0px 0px 5px 5px #CDAA7D;
+          
+
+           .procedure {
+        
+            font-family: "Garamond";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            position: absolute;
+            bottom: 0px;
+          
+
            }
         }
     }
@@ -118,6 +149,13 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
        
+        .box_partners {
+            a {
+               img {
+                cursor: pointer;
+               }
+            }
+        }
     }
 }
 
@@ -144,7 +182,7 @@ main {
             line-height: 58px;
             letter-spacing: 0em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
 
         }
 
@@ -172,10 +210,14 @@ main {
                     color: #CDAA7D;
                     border-bottom: 1px solid #CDAA7D;
                 }
-            }        
+            }  
+            .active { 
+                color: #CDAA7D;
+                border-bottom: 1px solid #CDAA7D;
+            }      
         } 
 
-        .foto {
+        .photo {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;

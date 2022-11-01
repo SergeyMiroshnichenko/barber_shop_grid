@@ -7,20 +7,36 @@
     padding: 20px 0px;
 
     .container {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: center;
-        justify-items: center;
         margin-bottom: 20px;
-        align-items:start;
+        border-bottom: 1px solid #FFFFFF;
 
+        @media(max-width:860px) {
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+        .logo {
+            display: grid;
+            grid-template-columns: 4fr;
+            justify-items: start;
+        }
         .contact {
             width: 50%;
+            margin-bottom: 20px;
+
+            @media(max-width:1030px) {
+                width: 60%;
+            }
+
+            @media(max-width:860px) {
+                width: 70%;
+                margin-bottom: 30px;
+            }
 
             address {
                 cursor: pointer;
                 color: white;
-                font-family:"Garamond";
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 23px;
@@ -48,7 +64,6 @@
         a {
             cursor: pointer;
             color: white;
-            font-family:"Garamond";
             font-size: 18px;
             font-weight: 400;
             line-height: 23px;
@@ -80,7 +95,6 @@
 p {
     color: white;
     margin: 0px;
-    font-family: "Garamond";
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -92,7 +106,7 @@ p {
 .insta {
     transition: 0.3s;
     border-bottom: 1px solid transparent;
-    
+
     a {
         &:hover {
             color: #CDAA7D;
@@ -107,7 +121,6 @@ p {
 
 .copy {
     color: white;
-    font-family:"Garamond";
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
